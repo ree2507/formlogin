@@ -1,0 +1,93 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #485057;
+	font-family: Arial, sans-serif;
+}
+
+.login-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+.login-box {
+	width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+	text-align: center;
+	font-size: 2em;
+	margin-bottom: 20px;
+	animation: tracking-in-expand 5s cubic-bezier(0.215, 0.610, 0.355, 1.000) both 1s infinite;
+}
+
+@keyframes tracking-in-expand {
+	0% {
+		letter-spacing: -0.5em;
+		opacity: 0;
+	}
+
+	40% {
+		opacity: 0.6;
+	}
+
+	100% {
+		opacity: 1;
+		letter-spacing: normal;
+	}
+}
+
+
+form label {
+	display: block;
+	margin-bottom: 5px;
+	font-size: 1.2em;
+}
+
+form input[type="text"] {
+  width: 100%;
+	padding: 10px;
+	border: none;
+	border-radius: 5px;
+	margin-bottom: 20px;
+	background-color: #f2f2f2;
+}
+	
+form input[type="password"] {
+	width: 100%;
+	padding: 10px;
+	border: none;
+	border-radius: 5px;
+	margin-bottom: 20px;
+	background-color: #f2f2f2;
+}
+
+form input[type="submit"] {
+	background-color: #008CBA;
+	color: #ffffff;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+	background-color: #005b80;
+}
+
+@media only screen and (min-width: 768px) {
+	.login-container {
+		height: auto;
+	}
+}
